@@ -1,0 +1,226 @@
+html {
+    box-sizing:border-box;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px white, 0 0 2em blue, 0 0 0.2em #3861da;
+    letter-spacing: 2rem;
+    font-size: 5vw;
+}
+
+.banner {
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------------------- */
+
+/* CARD SLIDE SHOW SECTION */
+
+section {
+    background-color: rgb(134, 22, 22);
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+    "title cards"
+    "button cards";
+
+}
+
+#agent-nav {
+    grid-area: cards;
+}
+
+#agent-title {
+    padding: 20px;
+    padding-top: 70px;
+    grid-area: title;
+}
+
+#agents {
+    font-family: 'Protest Guerrilla', sans-serif;;
+}
+
+.wrapper {
+    height: 200x; 
+    position: relative;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    grid-area: button;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    text-shadow: 8px 8px #000000;
+}
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.card {
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+
+h2 {
+    writing-mode: vertical-rl;
+    font-family: Protest Guerrilla;
+    font-size: 75px;
+    margin: 0;
+    font-style: oblique;
+    text-align: center;
+    letter-spacing: 1.3rem;
+    text-shadow: 8px 8px #000000;
+}
+
+.modal {
+    z-index: 1;
+    position: absolute;
+    /* height: 640px; */
+    /* width: 1200px; */
+    /* top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px; */
+    top: 68vw;
+    left: 15vw;
+    right: 2vw;
+    padding-bottom: 50px;
+    display: flex;
+    background-color: #000000;
+    border: solid #FFFFFF;
+    box-shadow: 0 0 100px 50px #000000;
+    border-radius: 20px;
+  }
+
+  .close {
+    z-index: 2;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
+  .img-modal {
+    display: flex;
+    align-items: center;
+    width: 50%; 
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+/* END CARD SLIDE SHOW */
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* Modal Content */ 
+
+.modalTitle {
+    text-align: center;
+}
+.agentAbilities {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.abilityBox {
+    padding: 10px;
+    max-width: 160px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+.agentImg {
+    max-width: 100%; /* Make the image responsive within the container */
+            height: auto; /* Maintain the image's aspect ratio */
+            display: block; /* Remove extra spacing below the image */
+            margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* End Modal Content */
+/* --------------------------------------------------------------------------------------------- */
+
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* mobile */
+@media all and (max-width: 800px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #agent-title {
+        padding-top: 20px;
+    }
+
+    #agent-title > h2 {
+        text-align: center;
+        writing-mode: horizontal-tb;
+        letter-spacing: normal;
+        font-size: 55px;
+    }
+
+    .button-wrapper {
+        margin-bottom: 10px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card > img {
+        height: 400px;
+    }
+
+    .modal {
+        flex-direction: column;
+        align-items: center;
+        left: 2vw;
+    }
+
+    .agentAbilities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abilityBox {
+        padding: 10px;
+        border-color: yellow;
+        border-style: solid;
+        max-width: none;
+        width: 95%;
+        text-align: center;
+    }
+}
