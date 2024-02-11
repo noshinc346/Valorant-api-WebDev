@@ -49,7 +49,7 @@ fetch(baseURL)
                     console.log(char.description )
                     description.innerText = char.description
                     myModalTitle.innerText = char.displayName
-                    agentRole.innerText = char.role.displayName
+                    agentRole.innerText = `ROLE: ${char.role.displayName}`
                     agentAbility1.innerText = char.abilities[0].displayName
                     agentAbilityDesc.innerText = char.abilities[0].description
                     agentAbility2.innerText = char.abilities[1].displayName 

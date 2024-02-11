@@ -161,6 +161,10 @@ h2 {
             margin: 0 auto; /* Center the image horizontally */
 }
 
+.description {
+    padding-left: 10px;
+}
+
 
 /* End Modal Content */
 /* --------------------------------------------------------------------------------------------- */
@@ -169,7 +173,16 @@ h2 {
 footer {
     color: white;
     background-color: black;
+    
 }
+
+.footer {
+    margin: 0;
+    background: #4a0000;
+    text-align: center;
+    padding: 20px;
+}
+
 
 
 
@@ -217,10 +230,13 @@ footer {
 
     .abilityBox {
         padding: 10px;
-        border-color: yellow;
-        border-style: solid;
         max-width: none;
         width: 95%;
+        text-align: center;
+    }
+
+    .description {
+        padding-left: 0;
         text-align: center;
     }
 }

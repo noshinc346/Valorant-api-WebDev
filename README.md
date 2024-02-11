@@ -1,30 +1,22 @@
 
 # Project Title
 
-Let's Travel! Valorant Agents
+Meet Your Agents
 
 ## Description
+Valorant is a free-to-play first-person tactical hero shooter developed and published by Riot Games. 
 
-There are 23 Valorant Agents. Each agent is unique in its own way. Specifically want to focus on their ethnicity. Main page can have multiple buttons each designated to the agent that takes user into the agents information. 
-
-Design each agents page to implement their culture to make it fun. 
+There are 23 Valorant Agents. Each agent is unique in its own way. Main page can have multiple interactive player cards. Each designated to the agent that takes user into the agents information. 
 
 Inspo : https://playvalorant.com/en-us/agents/ 
-    But rather game sense focused - more about getting to know the agents themselves. (maybe?)
 
 ## Getting Started
-
-### Wireframe
-
-* use figma -- 
-
 ### API 
 
 * Endpoints: https://dash.valorant-api.com/
 * Focus Endpoint: https://dash.valorant-api.com/endpoints/agents
 * Actual API Database JSON : https://valorant-api.com/v1/agents
 
-### MVP
 
 #### Inspo: 
 
@@ -34,10 +26,14 @@ Valorant agents: https://playvalorant.com/en-us/agents/
 
 LoL Champions: https://www.leagueoflegends.com/en-us/champions/
 
-Apple Product Scroll Feature: https://www.apple.com/iphone-15-pro/
 
-## Post MVP
+## Technologies Used: 
+Carousel: slideshow component to cycle through the player cards. 
 
+## Approaches Taken, 
+
+## Link to Live Site 
+### Relevant Instructions
 
 
 ## Acknowledgments
