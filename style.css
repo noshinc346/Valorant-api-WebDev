@@ -183,7 +183,10 @@ footer {
     padding: 20px;
 }
 
-
+.footer-quote {
+    font-size: xx-large;
+    text-decoration: overline;
+}
 
 
 /* --------------------------------------------------------------------------------------------- */

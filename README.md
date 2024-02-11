@@ -30,14 +30,23 @@ LoL Champions: https://www.leagueoflegends.com/en-us/champions/
 ## Technologies Used: 
 Carousel: slideshow component to cycle through the player cards. 
 
-## Approaches Taken, 
+Modal: dialog box window that is displayed on top of the current page.
+
+## Approaches Taken
+Each card able to identify what character is being clicked on - and what information to push out into the modal: 
+
+Each img card had a attribute with agent name. Created an event listener that contains a forEach loop into the API to match the data attritbute agent name to the agent name in the API. If true -> several information will be pushed out. 
 
 ## Link to Live Site 
-### Relevant Instructions
+https://noshinc346.github.io/ 
 
+### Relevant Instructions
+In the agents section, you may click the arrow buttons to slide through cards. Click on any card to learn about the agent and their abilities. You may also swipe on the carousel too. 
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 * [Valorant Agents Page](https://playvalorant.com/en-us/agents/ )
+
+* [Modal Help](https://nnmcgovern.github.io/ui-pattern/)
 
